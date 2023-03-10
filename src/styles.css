@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  margin-left: 1rem;
+  font-family: "Lucida Sans";
+  color: rgb(116, 76, 36);
+  margin-top: 1rem;
+  font-size: 12;
+}
+.header {
+  margin-right: 0%;
+}
+
+.navbar {
+  display: flex;
+}
+
+.logo {
+  margin-left: 5.5rem;
+
+  width: 4rem;
+}
+
+.description1 {
+  margin-left: 1rem;
+  font-family: "Lucida Sans";
+  font-size: 0.7rem;
+  color: rgb(116, 76, 36);
+  margin-top: -0.5rem;
+}
+
+.description2 {
+  margin-left: 1rem;
+  font-family: "Lucida Sans";
+  font-size: 0.7rem;
+  color: rgb(116, 76, 36);
+  margin-top: -1rem;
+}
+
+.navlinks {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  font-family: "Lucida Sans";
+  color: rgb(116, 76, 36);
+  font-size: 0.7rem;
+}
+
+.social1 {
+  height: 1rem;
+  margin-bottom: 0.1rem;
+}
+
+.social2 {
+  height: 1rem;
+  margin-right: 3rem;
+  margin-bottom: 0.1rem;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  margin-right: 0rem;
+  margin-left: 13rem;
+}
+
+.carrousel {
+  height: 35rem;
+  width: 35rem;
+  margin-left: 11rem;
+}
+
+.carrousel-item {
+  height: 35rem;
+}
+
+.plant {
+  height: 35rem;
+}
+
+.subject {
+  margin-left: 11rem;
+  font-family: "Lucida Sans";
+  color: rgb(116, 76, 36);
+}
+
+.separator {
+  margin-left: 11rem;
+  font-family: "Lucida Sans";
+  color: rgb(116, 76, 36);
+  width: 70rem;
+  margin-top: -0.1rem;
+}
+
+.accordion {
+  width: 35rem;
+  margin: 2rem auto;
+  color: blue;
+  margin-left: 29rem;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 0.5rem;
+}
+
+.description-title {
+  margin-left: 11rem;
+  font-family: "Lucida Sans";
+  color: rgb(116, 76, 36);
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.description-topic {
+  margin-left: 11rem;
+  font-family: "Lucida Sans";
+  color: rgb(116, 76, 36);
+  font-size: 0.6rem;
+  font-weight: bold;
+  margin-right: 0.2rem;
+}
+
+.description-topic-translation {
+  font-family: "Lucida Sans";
+  color: rgb(116, 76, 36);
+  font-size: 0.6rem;
+}
+
+.description {
+  margin-left: 11rem;
+  font-family: "Lucida Sans";
+  color: rgb(116, 76, 36);
+  font-size: 0.6rem;
+  margin-top: -1rem;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+
+/* CHECKBOX HACK */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+  display: none;
+
+  font-size: 24px;
+
+  user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  .header {
+    margin-left: 1rem;
+    align-items: center;
+  }
+  .title {
+    margin-left: 0rem;
+    font-family: "Lucida Sans";
+    color: rgb(116, 76, 36);
+    margin-top: 0rem;
+    font-size: 0.5rem;
+  }
+
+  .logo {
+    margin-top: -1rem;
+    margin-left: 0rem;
+    width: 4rem;
+  }
+
+  .description1 {
+    margin-left: 0rem;
+    font-family: "Lucida Sans";
+    font-size: 0.4rem;
+    color: rgb(116, 76, 36);
+    margin-top: -0.5rem;
+  }
+
+  .description2 {
+    margin-left: 1rem;
+    font-family: "Lucida Sans";
+    font-size: 0.4rem;
+    color: rgb(116, 76, 36);
+    margin-top: -1rem;
+  }
+
+  .navlinks {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    font-family: "Lucida Sans";
+    color: rgb(116, 76, 36);
+    font-size: 0.7rem;
+    width: 4rem;
+    margin-left: 1rem;
+  }
+
+  .social1 {
+    height: 1rem;
+    margin-top: 0.7rem;
+    margin-left: 0rem;
+  }
+
+  .social2 {
+    height: 1rem;
+    margin-top: 0.7rem;
+    margin-left: -1rem;
+  }
+
+  .menu {
+    display: none;
+    gap: 1rem;
+    position: absolute;
+    background-color: white;
+    width: 31rem;
+    top: 3.5rem;
+    font-size: 0.5rem;
+    align-items: center;
+    padding-right: 1rem;
+    margin-top: 0.15rem;
+    margin-left: -15rem;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-left: 0.1rem;
+  }
+
+  .carrousel {
+    height: 12.5rem;
+    width: 50%;
+    margin-left: 1rem;
+  }
+
+  .carrousel-item {
+    height: 12.5rem;
+  }
+
+  .plant {
+    height: 12.5rem;
+    width: 50%;
+    margin-right: 1rem;
+  }
+
+  .subject {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    font-family: "Lucida Sans";
+    color: rgb(116, 76, 36);
+  }
+
+  .separator {
+    margin-left: 1rem;
+    font-family: "Lucida Sans";
+    color: rgb(116, 76, 36);
+    width: 90%;
+    margin-top: -0.1rem;
+    margin-right: 10rem;
+  }
+
+  .description-title {
+    margin-left: 1rem;
+    font-family: "Lucida Sans";
+    font-size: 0.6rem;
+    color: rgb(116, 76, 36);
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  .description-topic {
+    margin-left: 1rem;
+    font-family: "Lucida Sans";
+    color: rgb(116, 76, 36);
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin-right: 0.2rem;
+  }
+
+  .description-topic-translation {
+    font-family: "Lucida Sans";
+    color: rgb(116, 76, 36);
+    font-size: 0.5rem;
+  }
+
+  .description {
+    margin-left: 1rem;
+    font-family: "Lucida Sans";
+    color: rgb(116, 76, 36);
+    font-size: 0.5rem;
+    margin-top: -1rem;
+  }
+
+  .accordion {
+    width: 12rem;
+    margin: 2rem auto;
+    color: blue;
+    margin-left: 7.5rem;
+  }
+
+  .accordion-title,
+  .accordion-content {
+    padding: 0.5rem;
+  }
+}
+
+.input {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid;
+  margin-bottom: 1%;
+}
+
+.form {
+  display: inline-grid;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.formLabel {
+  font-family: "Lucida Sans";
+  color: rgb(116, 76, 36);
+  font-size: 0.6rem;
+}
+
+.submitButton {
+  color: rgb(116, 76, 36);
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  width: 20%;
+  margin-left: 80%;
+  margin-top: 1%;
+  border: 0.01rem solid;
+}
+
+.gridContainer {
+  display: flex;
+  gap: 5%;
+  padding-left: 10%;
+}
+.gridItem {
+  text-align: center;
+}
+
+.gridItemImage {
+  width: 15rem;
+  height: 10rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.gridItemImage:hover {
+  opacity: 70%;
+}
+
+.descriptions {
+  color: rgb(116, 76, 36);
+  font-size: 0.6rem;
+}
+
+.subDescriptions {
+  color: rgba(186, 149, 110, 1);
+  font-size: 0.5rem;
+}
+.gridDivision {
+  padding: 0.6%;
+}
+
+@media (max-width: 768px) {
+  .gridContainer {
+    display: block;
+    gap: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+}
+
+@media (max-width: 400px) {
+  .accordion {
+    width: 10rem;
+    margin-left: 6.7rem;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+
+  .header {
+    margin-left: 0.5rem;
+    align-items: center;
+  }
+
+  .social1 {
+    height: 1rem;
+    margin-top: 0.7rem;
+    margin-left: -1.5rem;
+  }
+
+  .social2 {
+    height: 1rem;
+    margin-top: 0.7rem;
+    margin-left: -2rem;
+  }
+  .hamburger {
+    display: flex;
+    margin-left: -0.2rem;
+  }
+}
